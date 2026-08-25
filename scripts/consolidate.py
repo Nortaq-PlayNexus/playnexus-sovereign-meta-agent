@@ -117,11 +117,18 @@ def main():
     print(f"Mode: {'DRY RUN' if dry_run else 'LIVE'}")
     print("=" * 60)
 
-    # Verify directory exists
+    # Create directory structure if it doesn't exist
     if not SOVEREIGN_HOME.exists():
-        print(f"ERROR: {SOVEREIGN_HOME} does not exist.")
-        print("Run the SOVEREIGN setup first to create the directory structure.")
-        sys.exit(1)
+        print(f"Creating {SOVEREIGN_HOME}...")
+        dirs = [
+            "knowledge/facts", "knowledge/patterns", "knowledge/lessons",
+            "knowledge/preferences", "knowledge/domain",
+            "memory/sessions", "memory/decisions", "memory/goals",
+            "workspace/projects", "workspace/artifacts", "config"
+        ]
+        for d in dirs:
+            (SOVEREIGN_HOME / d).mkdir(parents=True, exist_ok=True)
+        print(f"Created directory structure at {SOVEREIGN_HOME}")
 
     # Get stats
     stats, total = get_memory_stats(verbose)

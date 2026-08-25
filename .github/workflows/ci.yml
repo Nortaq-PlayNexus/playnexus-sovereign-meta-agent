@@ -56,6 +56,8 @@ jobs:
       - name: Run consolidation script
         run: |
           python scripts/consolidate.py --verbose --dry-run
+        env:
+          HOME: /home/runner
 
       - name: Validate Python syntax
         run: |
