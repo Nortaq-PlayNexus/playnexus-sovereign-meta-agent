@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Validate agent file syntax
+        run: |
+          if [ ! -f "agent/sovereign.md" ]; then
+            echo "ERROR: agent/sovereign.md not found"
+            exit 1
+          fi
+          echo "Agent file found: $(wc -c < agent/sovereign.md) bytes"
+
+      - name: Validate command files
+        run: |
+          for cmd in commands/sovereign-*.md; do
+            if [ ! -f "$cmd" ]; then
+              echo "ERROR: $cmd not found"
+              exit 1
+            fi
+            echo "Command file found: $cmd ($(wc -c < "$cmd") bytes)"
+          done
+
+      - name: Validate skill file
+        run: |
+          if [ ! -f "skills/sovereign-memory/SKILL.md" ]; then
+            echo "ERROR: skills/sovereign-memory/SKILL.md not found"
+            exit 1
+          fi
+          echo "Skill file found: $(wc -c < skills/sovereign-memory/SKILL.md) bytes"
+
+      - name: Validate template files
+        run: |
+          for f in templates/knowledge/*/INDEX.md templates/memory/*/INDEX.md templates/workspace/*/INDEX.md templates/config/preferences.json; do
+            if [ ! -f "$f" ]; then
+              echo "WARNING: $f not found"
+            else
+              echo "Template found: $f"
+            fi
+          done
+
+      - name: Run consolidation script
+        run: |
+          python scripts/consolidate.py --verbose --dry-run
+
+      - name: Validate Python syntax
+        run: |
+          python -m py_compile scripts/consolidate.py
+          echo "Python syntax valid"
+
+      - name: Check for secrets
+        run: |
+          if grep -r "api_key\|password\|secret\|token" --include="*.md" --include="*.json" --include="*.py" . | grep -v ".env.example" | grep -v "README.md" | grep -v "CONTRIBUTING.md" | grep -v "SECURITY.md" | grep -v "docs/" | grep -v "CHANGELOG.md"; then
+            echo "WARNING: Possible secrets detected. Review above lines."
+          else
+            echo "No secrets detected"
+          fi
+
+      - name: Validate Markdown
+        run: |
+          for f in README.md CONTRIBUTING.md SECURITY.md CHANGELOG.md ROADMAP.md FAQ.md TROUBLESHOOTING.md docs/*.md; do
+            if [ -f "$f" ]; then
+              echo "Valid: $f"
+            else
+              echo "MISSING: $f"
+            fi
+          done

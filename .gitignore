@@ -1,0 +1,46 @@
+# Dependencies
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/

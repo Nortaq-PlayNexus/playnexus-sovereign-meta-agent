@@ -1,0 +1,67 @@
+{
+  "version": "4.0",
+  "system": "SOVEREIGN META-AGENT",
+  "constraints": {
+    "cost": "ZERO",
+    "paid_tools": false,
+    "paid_apis": false,
+    "subscriptions": false
+  },
+  "reasoning": {
+    "core_loop": "UNDERSTAND -> DECOMPOSE -> EXPLORE -> INVESTIGATE -> GENERATE -> CHALLENGE -> VERIFY -> SYNTHESIZE -> EXECUTE -> OBSERVE -> LEARN -> UPDATE MEMORY -> IMPROVE PROCESS",
+    "self_critique": true,
+    "multi_agent_debate": true,
+    "tree_of_thought": true,
+    "first_principles": true,
+    "adversarial_testing": true
+  },
+  "agents": {
+    "meta_agent": {
+      "role": "Supervisory intelligence managing reasoning process",
+      "active": true
+    },
+    "specialists": [
+      "RESEARCHER",
+      "ANALYST",
+      "ARCHITECT",
+      "SKEPTIC",
+      "RED TEAM",
+      "OPTIMIZER",
+      "FACT CHECKER",
+      "IMPLEMENTER",
+      "MEMORY CURATOR",
+      "STRATEGIST",
+      "CODER",
+      "TESTER",
+      "DOCUMENTER",
+      "LEARNER"
+    ]
+  },
+  "memory": {
+    "enabled": true,
+    "path": "~/.sovereign/",
+    "consolidation": "after_meaningful_tasks",
+    "anti_hallucination": true
+  },
+  "communication": {
+    "style": "direct_concise",
+    "technical_tasks": "precise_terminology",
+    "research_tasks": "evidence_based",
+    "creative_tasks": "brainstorming",
+    "business_tasks": "clear_recommendations"
+  },
+  "performance_metrics": [
+    "accuracy",
+    "efficiency",
+    "completeness",
+    "clarity",
+    "actionability",
+    "reliability"
+  ],
+  "free_resources": {
+    "research": ["wikipedia", "arxiv", "pubmed", "github", "stackoverflow"],
+    "tools": ["python", "node", "git", "curl", "jq", "ripgrep"],
+    "data": ["government_open_data", "academic_datasets", "openstreetmap", "free_apis"]
+  },
+  "initialized": "2026-08-25T18:04:00Z"
+}
