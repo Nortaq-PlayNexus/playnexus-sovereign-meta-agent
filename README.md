@@ -49,7 +49,7 @@ SOVEREIGN provides:
 
 ---
 
-## Features
+\n---\n\n## Screenshots\n\n| Preview | Description |\n|---------|-------------|\n| ![screenshot](docs/screenshots/screenshot.png) | Main interface |\n| ![screenshot](docs/screenshots/demo.gif) | Demo |\n\n*Screenshots coming soon — placeholders auto-generated. Replace docs/screenshots/ with real captures.*\n\n## Features
 
 - **META-AGENT** — Supervisory intelligence that manages the reasoning process
 - **14 Specialist Agents** — Researcher, Analyst, Architect, Skeptic, Red Team, Optimizer, Fact Checker, Implementer, Memory Curator, Strategist, Coder, Tester, Documenter, Learner
