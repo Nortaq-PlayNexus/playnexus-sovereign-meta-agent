@@ -1,29 +1,32 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/SOVEREIGN-COGNITIVE%20ARCHITECTURE-B8FF1E?style=flat-square&labelColor=0a0e1a" alt="sovereign" />
+</p>
+
 # SOVEREIGN META-AGENT
 
-<div align="center">
+**Autonomous Intelligence, Research, Reasoning & Execution System** — Version 4.0, Zero-Cost, Maximum Autonomy.
 
-```
- ____  _____ ____  _  ______     ___  ____  
-/ ___|| ____/ ___|| |/ / ___|   / _ \/ ___| 
-\___ \|  _|\___ \| ' / |  _   | | | \___ \ 
- ___) | |___ ___) | . \ |_| |  | |_| |___) |
-|____/|_____|____/|_|\_\____|   \___/|____/ 
-```
+<p align="center">
+  <img src="https://img.shields.io/badge/PYTHON-3.10%2B-ffc430?style=flat-square&logo=python&logoColor=ffc430&labelColor=0a0e1a" alt="python"/>
+  <img src="https://img.shields.io/badge/FOR-OPENCODE-B8FF1E?style=flat-square&logo=opencode&logoColor=white&labelColor=0a0e1a" alt="opencode"/>
+  <img src="https://img.shields.io/badge/MEMORY-PERSISTENT-00E5FF?style=flat-square&labelColor=0a0e1a" alt="memory"/>
+  <img src="https://img.shields.io/badge/CRITIQUE-ADVERSARIAL-3dd5ff?style=flat-square&labelColor=0a0e1a" alt="critique"/>
+  <img src="https://img.shields.io/badge/VERSION-4.0-00E5FF?style=flat-square&labelColor=0a0e1a" alt="version"/>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-ff3b3b?style=flat-square&labelColor=0a0e1a" alt="license"/></a>
+</p>
 
-**Autonomous Intelligence, Research, Reasoning & Execution System**
-
-*Version 4.0 — Zero-Cost, Maximum Autonomy*
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![opencode](https://img.shields.io/badge/Works%20with-opencode-blue.svg)](https://opencode.ai)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-green.svg)](https://python.org)
-[![Platform](https://img.shields.io/badge/Platform-Cross--platform-lightgrey.svg)]()
-
-</div>
+<pre>
+IDENT ......... SOVEREIGN-01
+CLASS ......... AGENT COGNITIVE ARCHITECTURE
+STATUS ........ ONLINE / ACTIVE
+MODE .......... MULTI-AGENT REASONING · ZERO-COST
+CRITIQUE ...... ADVERSARIAL SELF-REVIEW
+LINK .......... /playnexus-sovereign-meta-agent
+</pre>
 
 ---
 
-## What is SOVEREIGN?
+## // 01 :: WHAT IS SOVEREIGN?
 
 SOVEREIGN is a **cognitive architecture** for [opencode](https://opencode.ai) that transforms a standard AI assistant into a **multi-agent reasoning system** with persistent memory, adversarial self-critique, and structured knowledge management — all using **zero-cost tools**.
 
