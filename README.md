@@ -52,7 +52,8 @@ SOVEREIGN provides:
 
 ---
 
-\n---\n\n## Screenshots\n\n| Preview | Description |\n|---------|-------------|\n| ![screenshot](docs/screenshots/screenshot.png) | Main interface |\n| ![screenshot](docs/screenshots/demo.gif) | Demo |\n\n*Screenshots coming soon — placeholders auto-generated. Replace docs/screenshots/ with real captures.*\n\n## Features
+
+## Features
 
 - **META-AGENT** — Supervisory intelligence that manages the reasoning process
 - **14 Specialist Agents** — Researcher, Analyst, Architect, Skeptic, Red Team, Optimizer, Fact Checker, Implementer, Memory Curator, Strategist, Coder, Tester, Documenter, Learner
@@ -362,3 +363,8 @@ MIT License — see [LICENSE](LICENSE) for details.
 **[SOVEREIGN META-AGENT](https://github.com/Nortaq-PlayNexus/playnexus-sovereign-meta-agent)** — *Autonomous Intelligence at Zero Cost*
 
 </div>
+
+
+## Screenshot status
+
+Application captures are not included in this checkout. Add screenshots from a documented run before presenting a visual demonstration.
